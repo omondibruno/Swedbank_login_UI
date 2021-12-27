@@ -1,0 +1,204 @@
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header .logIn a {
+    color: orange;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .log-in {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+header .log-in:hover {
+    text-decoration: underline;
+}
+
+header .log-in .fa-sign-in-alt {
+    color: orange;
+}
+
+#tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tabs-2 p {
+    margin-bottom: 8px;
+}
+
+#tabs-2 p a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+#tabs ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabs ul li {
+    width: calc(97% / 5);
+}
+
+#tabs-1 form input[type="text"],
+#tabs-2 form input[type="text"],
+#tabs-3 form input[type="text"],
+#tabs-4 form input[type="text"],
+#tabs-5 form input[type="text"],
+#tabs-3 form input[type="number"],
+#tabs-4 form input[type="number"],
+#tabs-5 form input[type="number"] {
+    width: 100px;
+    height: 45px;
+}
+
+
+#tabs-1 form,
+#tabs-2 form  {
+    display: flex;
+    align-items: center;
+}
+
+#tabs-1 form input[type="checkbox"],
+#tabs-2 form input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+#tabs-1 form button,
+#tabs-2 form button,
+#tabs-3 form button,
+#tabs-4 form button,
+#tabs-5 form button {
+    margin-left: 20px;
+    width: 70px;
+    height: 45px;
+    background: orange;
+    outline: none;
+    border: none;
+    color: #fff;
+    opacity: .5;
+}
+
+#tabs-1 form button:hover,
+#tabs-2 form button:hover,
+#tabs-3 form button:hover,
+#tabs-4 form button:hover,
+#tabs-5 form button:hover {
+    opacity: .7;
+}
+
+#tabs-3 form select {
+    height: 45px;
+}
+
+.media-responsive {
+    display: none;
+}
+
+#tabbed {
+    display: none;
+}
+
+#list {
+    display: none;
+}
+#list h2 {
+    display: none;
+}
+#speed {
+    display: none;
+}
+.more {
+    display: none;
+}
+
+/* mmaking the login mobile responsive */
+
+@media only screen and (max-width: 767px) {
+    header {
+        display: none;
+    }
+    #tabs {
+        display: none;
+    }
+    .media-responsive {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 12px;
+        border: 1px solid gainsboro;
+    }
+    .media-responsive .logIn {
+        font-size: 28px;
+        color: orange;
+        font-weight: bold;
+    }
+    .media-responsive .log-in {
+        cursor: pointer;
+    }
+    .media-responsive .log-in .fa-user-circle {
+        font-size: 25px;
+    }
+    #list {
+        padding: 0 10px;
+    }
+    fieldset {
+        border: 0;
+    }
+    #speed {
+        width: 100%;
+        height: 45px;
+        font-size: 17px;
+        background: powderblue;
+        outline: none;
+        border: none;
+        display: block;
+    }
+    label {
+      display: block;
+      margin: 30px 0 0 0;
+    }
+    .overflow {
+      height: 200px;
+    }
+    #list {
+        display: block;
+    }
+    #list h2 {
+        display: block;
+    }
+    .more a {
+        text-decoration: none;
+    }
+    .more {
+        display: block;
+    }
+}
+

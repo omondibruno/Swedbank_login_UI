@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Swedbank</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="jquery.css">
+    <link rel="stylesheet" href="jquery2.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+    </script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logIn"><a href="">Swedbank</a></div>
+        <div class="log-in" onclick="myFunction()"><i class="fas fa-sign-in-alt"></i> Log In</div>
+    </header>
+
+    <div class="media-responsive">
+        <div class="logIn">Swedbank</div>
+        <div class="log-in" onclick="myFunction1()"><i class="fas fa-user-circle"></i></div>
+    </div>
+
+    <div id="list">
+        <h2>Log in with</h2>
+        <select name="speed" id="speed">
+            <option selected="selected"><a href="#tabs-1"></a>Smart-ID</option>
+            <option><a href="#tabs-2"></a>Biometrics</option>
+            <option><a href="#tabs-3"></a>Mobile-ID</option>
+            <option><a href="#tabs-4"></a>PIN-calculator</option>
+            <option><a href="#tabs-5"></a>ID-card</option>
+        </select>
+
+
+        <div class="more">
+            <p><i class="fas fa-angle-right"></i> <a href="">Become a customer</a></p>
+            <p><i class="fas fa-angle-right"></i> <a href="">Book a conultation</a></p>
+        </div>
+    </div>
+
+    <!-- pop up login form -->
+    <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Smart-ID</a></li>
+          <li><a href="#tabs-2">Biometrics</a></li>
+          <li><a href="#tabs-3">Mobile-ID</a></li>
+          <li><a href="#tabs-4">PIN-calculator</a></li>
+          <li><a href="#tabs-5">ID-card</a></li>
+        </ul>
+        <h2 style="margin-top: 8px;">Log in with</h2>
+        <div id="tabs-1">
+          <form action="">
+              <input type="text" name="user-ID" id="userID">
+              <input type="checkbox" name="remember me" id="rememberMe">
+              <button type="submit">Enter</button>
+          </form>
+        </div>
+        <div id="tabs-2">
+          <p>Log in with your fingerprint or face recognition. To start using it, enable biometrics in Swedbank app first. <a href="">More</a></p>
+          <form action="">
+            <input type="text" name="user-ID" id="userID">
+            <input type="checkbox" name="remember me" id="rememberMe">
+            <button type="submit">Enter</button>
+        </form>
+        </div>
+        <div id="tabs-3">
+            <form action="">
+                <input type="text" name="user-ID" id="userID">
+                <select name="countryCode" id="">
+                    <option data-countryCode="LT" value="370"> (+370)</option>
+                    <option data-countryCode="EE" value="372"> (+372)</option>
+                </select>
+                <input type="number" name="phone" id="phoneNo">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+        <div id="tabs-4">
+            <form action="">
+                <input type="number" name="calc" id="calculator">
+                <input type="number" name="calc1" id="calculator1">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+        <div id="tabs-5">
+            <form action="">
+                <input type="number" name="calc" id="calculator">
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
